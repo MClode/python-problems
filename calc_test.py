@@ -2,7 +2,7 @@ import unittest
 from app import StockCalculator
 
 
-class MyTestCase(unittest.TestCase):
+class StockCalculatorTest(unittest.TestCase):
     def test_loss(self):
         Calc = StockCalculator([10, 8, 7, 5, 2, 1])
 
