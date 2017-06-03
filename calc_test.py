@@ -13,6 +13,11 @@ class StockCalculatorTest(unittest.TestCase):
 
         self.assertEqual(Calc.find(), 6)
 
+    def test_no_profit(self):
+        Calc = StockCalculator([10, 10, 10, 10, 10, 10])
+
+        self.assertEqual(Calc.find(), 0)
+
 
 if __name__ == '__main__':
     unittest.main()
