@@ -14,8 +14,7 @@ class StockCalculator:
         # keeping track of profit and the lowest previous price. If the current price gives us a better profit, we
         # update max profit. A simple greedy algorithm
         for price in self.list[1:]:
-            if (price - min_price) > max_profit:
-                max_profit = price - min_price
+            max_profit = max((price - min_price), max_profit)
 
             min_price = min(price, min_price)
 
