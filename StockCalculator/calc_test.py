@@ -1,5 +1,6 @@
 import unittest
-from app import StockCalculator
+
+from StockCalculator.app import StockCalculator
 
 
 class StockCalculatorTest(unittest.TestCase):
