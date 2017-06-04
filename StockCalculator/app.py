@@ -5,6 +5,7 @@ purchase and 1 sale of 1 Apple stock yesterday.
 No "shorting"—you must buy before you sell. You may not buy and sell in the same time step.
 """
 
+
 class StockCalculator:
 
     def __init__(self, list):
